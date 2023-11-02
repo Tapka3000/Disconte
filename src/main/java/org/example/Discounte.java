@@ -1,6 +1,6 @@
 package org.example;
 
-public class Disconte {
+public class Discounte {
     public static void main(String[] args) {
         int costShirt = 1500; // стоимость без скидки
         int quantityShirt = 2;
@@ -24,13 +24,12 @@ public class Disconte {
         System.out.println("Цена за 3 рубашки со скидкой " + priceDisc + " рублей");
         System.out.println("Цена за 1 рубашку со скидкой " + oneShirt + " рублей");
         System.out.println("Экономия, если купить 3 рубашки со скидкой, вместо 2-х без скидки " + economy + " рублей");
-
         System.out.println("Количество халявных рубашек, купленных на сэкономленные деньги " + freebie + " шт.");
     }
 
     // Цена за 3 рубашки со скидкой
     public static double pricieDiscount(int costShirt, int remainingQuantity, int discount) {
-        double sum = (int) (costShirt * 2) + remainingQuantity;
+        double sum = (costShirt * 2) + remainingQuantity;
         double discountSum = sum / 100 * discount;
         double priceDisc = sum - discountSum;
         return priceDisc;
