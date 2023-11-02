@@ -1,5 +1,3 @@
-package org.example;
-
 public class Discounte {
     public static void main(String[] args) {
         int costShirt = 1500; // стоимость без скидки
